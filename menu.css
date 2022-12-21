@@ -1,0 +1,120 @@
+body{
+    position: relative;
+    height: 70vh;
+    background-color: #bababa;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 55px;
+    width: 80%;
+    text-align: center;
+}
+.dropdown{
+    display: inline-block;
+    border:2px solid #bababa;
+    background-color: #21201e;
+    height: 100%;
+    width: 300px;
+    border-radius: 15px;
+    position: relative;
+    text-align: left;
+    box-shadow: 2px 4px 10px #3c3c3c;
+}
+.default{
+    position: absolute;
+    top:17px;
+    left:22px;
+    font-size:17px;
+    color:#bababa;
+}
+.default span{
+    position: absolute;
+}
+.arrow{
+    position: absolute;
+    right: 0px;
+    border-radius:50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding-top: 14px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    border:1px solid #bababa;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    color: #bababa;
+    transition: 0.6s;
+    cursor:pointer;
+    
+}
+.arrow:hover{
+    background-color: #bababa;
+}
+.arrow:hover .fa-location-arrow{
+    color:#21201e;
+}
+.menu{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top:60px;
+	left:-2px;
+    border-radius: 15px;
+    border:2px solid #bababa;
+    background-color: #21201e;
+    visibility:hidden;
+	display:inline-block;
+    transition: 1s;
+    box-shadow: 2px 4px 10px #3c3c3c;
+
+}
+
+.slide{
+    height: 40px;
+    position: absolute;
+    width: 270px;
+    margin-left: 12px;
+    top: 5px;
+    border-radius: 15px;
+    background-color: #171717;
+    display: inline-block;
+	-webkit-transition: 0.5s;
+}
+.menu span{
+    display: flex;
+    margin-top: 3px;
+    margin-left: 15px;
+    font-size: 17px;
+}
+
+
+.row{
+    position: relative;
+    width: 100%;
+	top:5px;
+    height: 50px;
+    padding: 8px;
+    padding-left: 25px;
+    color:#bababa;
+    box-sizing: border-box;
+    background-color: transparent;
+	cursor: pointer;
+}
+
+.row:hover .fa-brands{
+    color:white;
+}
+.fa-brands{
+    font-size: 25px;
+    margin-right: 15px;
+    color:#bababa;
+}
+.fa-location-arrow{
+    transform: rotate(-45deg);
+    font-size: 14px;
+}

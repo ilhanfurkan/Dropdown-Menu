@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown-Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    
+
+    <script src="https://kit.fontawesome.com/2c3103d0c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown" ><span class="default" id="default">Seçiniz</span>
+            <div class="arrow" id="arrow"onclick="openMenu('arrow','menu')"><i class="fa-solid fa-location-arrow"></i></div>
+            <div class="menu" id="menu" onmouseout="noneDisplay('slide','hidden')" onmouseover="noneDisplay('slide','visible')">
+                <div class="slide" id="slide"></div>
+                <div class="row c1" id="c1" onclick="getValue('default',1,'menu','arrow')" onmouseover="slideMenu('slide','0')"><span>Instagram</span></div>
+                <div class="row c2" id="c2" onclick="getValue('default',2,'menu','arrow')" onmouseover="slideMenu('slide','1')"><span>Twitter</span></div>
+                <div class="row c3" id="c3" onclick="getValue('default',3,'menu','arrow')" onmouseover="slideMenu('slide','2')"><span>Facebook</span></div>
+                <div class="row c4" id="c4" onclick="getValue('default',4,'menu','arrow')" onmouseover="slideMenu('slide','3')"><span>Linkedin</span></div>
+                <div class="row c5" id="c5" onclick="getValue('default',5,'menu','arrow')" onmouseover="slideMenu('slide','4')"><span>Youtube</span></div>
+            </div>
+        </div>
+    </div>
+    <script language="JavaScript" type="text/javascript" src="dropdown.js"></script>
+</body>
+</html>   
